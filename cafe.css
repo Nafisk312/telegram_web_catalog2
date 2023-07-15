@@ -1,0 +1,56 @@
+body {
+  background: var(--tg-theme-bg-color);
+  color: var(--tg-theme-text-color);
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+.conteiner {
+  max-width: 390px;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 200px 200px;
+  wposition: relative;
+  width: 120px;
+  height: 159px;
+  padding: 4px 5px 21px;
+  box-sizing: border-box;
+  text-align: center
+}
+
+.img {
+  width: 100px;
+}
+
+.item {
+  wposition: relative;
+  width: 120px;
+  height: 159px;
+  padding: 4px 5px 21px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.btn {
+  display: inline-blocki;
+  padding: 10px 20px;
+  border: none;
+  background: rgb(248, 168, 24);
+  border-radius: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  transform:  background .2s liner;
+}
+
+.btn:hover {
+  background: lightgreen;
+}
+
+.usercard {
+  text-align: center ;
+}
