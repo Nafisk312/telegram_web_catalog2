@@ -19,15 +19,6 @@
 				<script type="text/python">
 					from browser import html, document
 
-					import requests
-					from bs4 import BeautifulSoup
-
-					url = 'https://qiwi.com/payment/form/39396'
-					response = requests.get(url)
-					soup = BeautifulSoup(response.text, 'lxml')
-					quotes = soup.find_all('div', class_='commission-info-self-489')
-					print(quotes)
-
 					document['sell'] <= html.H4('4999')
 				</script>
 				<button class="btn" id="btn1">Add</button>
