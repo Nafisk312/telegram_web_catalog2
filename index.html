@@ -3,27 +3,24 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script src="https://cdn.jsdelivr.net/npm/brython@3/brython.min.js "></script>
-	<script src="https://cdn.jsdelivr.net/npm/brython@3/brython_stdlib.js "></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython_stdlib.js" integrity="sha256-Gnrw9tIjrsXcZSCh/wos5Jrpn0bNVNFJuNJI9d71TDs=" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="cafe.css">
+	
 	<title>Catalog</title>
 	
 </head>
-<body onload="brython()">
+<body onload="brython();">
 	<div class="container">
 		<div class="inner">
 			<div class="item">
 				<img src="img/loc.jpg" alt="" class="img">
-				<h4 class="sell"></h4>
+				<h4 id="sell" class="sells"></h4>
 				<script type="text/python">
-					from browser import document
-					from browser import html
+					from browser import html, document
 
-
-
-					from = html.FROM()
-					h4 = html.H4("4999",type="sell")
-      			</script>
+					document['sell'] <= html.H4('4999')
+				</script>
 				<button class="btn" id="btn1">Add</button>
 			</div>
 			<div class="item">
@@ -51,6 +48,7 @@
 	</div>
 
 	<div class="usercard" id="usercard"></div>
+
 
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
 	<script src="app.js"></script>
