@@ -1,3 +1,3 @@
 from browser import html, document
 
-document['sell'] <= html.H4('4999')
+document['sell6'] <= html.H4('4999')
