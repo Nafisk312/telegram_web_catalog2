@@ -25,5 +25,6 @@ def exchange(api_access_token, currency_to, currency_from):
 		return rate[0]['rate']        
 
 curses = exchange("9afbe13e92d995dfc17befa52e6af754", "398", "643")
+summa = 4999 / curses
 
-document['sell5'] <= html.H4(curses)
+document['sell5'] <= html.H4(summa)
