@@ -18,12 +18,19 @@
 			<div class="item">
 				<img src="img/loc.jpg" alt="" class="img">
 				<h4 id="sell" class="sells"></h4>
+				<button class="btn" id="btn1">Add</button>
 				<script type="text/python">
 					from browser import html, document
+					from browser.widgets.dialog import InfoDialog
+
+					def click(ev):
+   						InfoDialog("Hello", f"Hello, {document['btn1'].value} !")
+
+					# bind event 'click' on button to function echo
+					document["echo"].bind("click", click)
 
 					document['sell'] <= html.H4('4999')
 				</script>
-				<button class="btn" id="btn1">Add</button>
 			</div>
 			<div class="item">
 				<img src="img/loc.jpg" alt="" class="img">
