@@ -5,7 +5,7 @@ tg.expand();
 tg.MainButton.textColor = '#FFFFFF';
 tg.MainButton.color = '#2cab37';
 
-let item = '';
+let item = "";
 
 let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
@@ -19,7 +19,7 @@ btn1.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("You by Loc");
+		tg.MainButton.setText("Вы выбрали товар 1!");
 		item = "1";
 		tg.MainButton.show();
 	}
@@ -30,8 +30,8 @@ btn2.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("You by Loc");
-		item = "1";
+		tg.MainButton.setText("Вы выбрали товар 2!");
+		item = "2";
 		tg.MainButton.show();
 	}
 });
@@ -41,8 +41,8 @@ btn3.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("You by Loc");
-		item = "1";
+		tg.MainButton.setText("Вы выбрали товар 3!");
+		item = "3";
 		tg.MainButton.show();
 	}
 });
@@ -52,8 +52,8 @@ btn4.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("You by Loc");
-		item = "1";
+		tg.MainButton.setText("Вы выбрали товар 4!");
+		item = "4";
 		tg.MainButton.show();
 	}
 });
@@ -63,8 +63,8 @@ btn5.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("You by Loc");
-		item = "1";
+		tg.MainButton.setText("Вы выбрали товар 5!");
+		item = "5";
 		tg.MainButton.show();
 	}
 });
@@ -74,21 +74,31 @@ btn6.addEventListener("click", function(){
 		tg.MainButton.hide();
 	}
 	else {
-		tg.MainButton.setText("You by Loc");
-		item = "1";
+		tg.MainButton.setText("Вы выбрали товар 6!");
+		item = "6";
 		tg.MainButton.show();
 	}
 });
 
+
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	tg.sendFata(item);
+	tg.sendData(item);
 });
 
-let usercard = document.getElementById('usercard')
 
-let p = document.createElement("p")
+let usercard = document.getElementById("usercard");
 
-p.innerText = `${tg.initDataUnsafe.user.first_name} 
+let p = document.createElement("p");
+
+p.innerText = `${tg.initDataUnsafe.user.first_name}
 ${tg.initDataUnsafe.user.last_name}`;
 
-usercard.appendChild(p)
+usercard.appendChild(p);
+
+
+
+
+
+
+
+
