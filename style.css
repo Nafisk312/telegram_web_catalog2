@@ -101,7 +101,12 @@ button:hover {
 	background: var(--tg-theme-secondary-bg-color);
 }
 
-#form, #inner {
+#form {
+	display: none;
+	text-align: center;
+}
+
+#inner {
 	display: none;
 	text-align: center;
 }
